@@ -1,4 +1,4 @@
-baseURL: https://xicu.info
+baseURL: https://xicu.github.io/
 title: Xicu Marí
 theme: 
   - hugo-adobe-pdf-embed
