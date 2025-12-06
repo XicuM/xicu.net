@@ -25,7 +25,7 @@ Al pasar un juego de mesa al formato digital, se abren nuevas posibilidades. La 
 
 La empresa propietaria de la marca ha lanzado versiones digitales de Risk para diversas plataformas. Llegó a ser un juego muy popular durante la pandemia de 2020, cuando el acceso al aire libre era un recurso escaso. Grandes streamers como Ibai Llanos aprovecharon la oportunidad para emitir en directo partidas de Risk, atrayendo a una gran audiencia y revitalizando el interés por el juego.
 
-A parte de la versión oficial, la comunidad de fans ha desarrollado múltiples versiones bajo diferentes nombres, tal como es el caso de [Domination](https://domination.sourceforge.io/download.shtml). La gran ventaja de estas versiones es que permiten crear mapas personalizados, adaptando el juego a las diferentes temáticas y estilos de juego que el usuario desee.
+A parte de la versión oficial, la comunidad de fans ha desarrollado múltiples versiones bajo diferentes nombres, tal como es el caso de [Domination](https://domination.sourceforge.io/download.shtml). La gran ventaja de estas versiones es que permiten crear mapas personalizados, adaptando el juego a las diferentes temáticas y estilos de juego que el usuario desee. En Domination, por ejemplo, puedes importar cualquier imagen como mapa, y a partir de ahí, definir territorios, conexiones y otras configuraciones.
 
 {{< figure src="https://domination.sourceforge.io/screenshots/dom_game.jpg" align="center" width="80%" alt="Domination" caption="Domination: una versión digital y gratuita del Risk." >}}
 
@@ -52,9 +52,9 @@ A estos cuatro *quartons* se le añade la villa de Ibiza, que formaba una entida
 
 Los siglos siguientes a la conquista vinieron marcados por la piratería y los ataques berberiscos, lo que llevó a la construcción de numerosas torres de defensa alrededor de la isla. Los habitantes de cada *quartó* se dividieron territorialmente para responsabilizarse de la defensa. Así, se establecieron turnos de vigilancia y mantenimiento de las fortificaciones en función del territiorio al que pertenecían. Estos territorios tomaron el nombre de estos turnos, llamándose *véndes*, un término que proviene del latín *vices* que significa alternancia.
 
-La división en quartons se mantuvo hasta la aplicación de los Decretos de Nueva Planta en 1715, que suprimieron los derechos feudales y las divisiones territoriales tradicionales, y establece un Ayuntamiento único para toda la isla.
+La división en *quartons* se mantuvo hasta la aplicación de los Decretos de Nueva Planta en 1715, que suprimieron los derechos feudales y las divisiones territoriales tradicionales, y establece un Ayuntamiento único para toda la isla.
 
-Durante el siglo XVIII, las ideas ilustradas promovieron reformas para evitar el atraso económico y social de las islas. Entre otros actores, la Iglesia católica promovió la edificación de nuevas parroquias con el objetivo de reducir la dispersión poblacional, señalada como una de las posibles causas del retraso general. La población fue asentándose con escaso éxito cerca de los templos, formando nuevos pueblos que adoptaron el nombre del santoral patrón de la parroquia. En 1785, el obispo Manuel Abat y Lasierra creó la división en parroquias de la isla al agrupar diversas véndes bajo la jurisdicción de un mismo templo. Posteriormente, en el siglo XIX, se establecieron los municipios actuales agrupando varias parroquias, asemejándose a la división histórica en quartons.
+Durante el siglo XVIII, las ideas ilustradas promovieron reformas para evitar el atraso económico y social de las islas. Entre otros actores, la Iglesia católica promovió la edificación de nuevas parroquias con el objetivo de reducir la dispersión poblacional, señalada como una de las posibles causas del retraso general. La población fue asentándose con escaso éxito cerca de los templos, formando nuevos pueblos que adoptaron el nombre del santoral patrón de la parroquia. En 1785, el obispo Manuel Abat y Lasierra creó la división en parroquias de la isla al agrupar diversas véndes bajo la jurisdicción de un mismo templo. Posteriormente, en el siglo XIX, se establecieron los municipios actuales agrupando varias parroquias, asemejándose de nuevo a la división histórica en *quartons*.
 
 {{< figure src="/posts/risk/vendes.png" full-width="true" alt="Mapa de véndes" caption="Posiblemente la fuente más detallada sobre la división territorial de las islas Pitiusas provenga del estudio del historiador Joan Marí Cardona (1925-2002). El mapa refleja las división tradicional de las islas en municipios, parroquias y véndes." >}}
 
@@ -65,18 +65,26 @@ La dinámica del juego de Risk gira en torno al concepto de territorios y contin
 
 En general, más territorios implica más tiempo de juego, lo que puede ser un desafío para los jugadores que no quieren partidas eternas. Un número de territorios entre 30 y 50 es un buen equilibrio. En cuanto a los continentes, es recomendable tener entre 4 y 6 continentes, cada uno con un número equilibrado de territorios. En el mapa clásico hay seis continentes con una distribución aproximada de territorios: Norteamérica (9), Sudamérica (4), Europa (7), África (6), Asia (12) y Oceanía (4).
 
-Al diseñar el mapa de las islas Pitiusas, decidí crear un total de 41 territorios divididos en seis continentes: los 4 quartons de Ibiza, la villa de Ibiza y la isla de Formentera. Puesto que el número de vendes es demasiado elevado para un mapa de Risk, decidí agrupar varias véndes para formar los territorios, pero manteniendo la esencia de la división histórica.
+Al diseñar el mapa de las islas Pitiusas, decidí crear un total de 41 territorios divididos en seis continentes: los 4 *quartons* de Ibiza, la ciudad de Ibiza y la isla de Formentera. Puesto que el número de *véndes* es demasiado elevado para un mapa de Risk, decidí agrupar varias véndes para formar los territorios, pero manteniendo la esencia de la división histórica.
 
 
 ### 3. Conectar los territorios
 
 Una vez definidos los territorios, es importante establecer las conexiones entre ellos. Estas conexiones determinan por dónde se pueden mover las tropas y atacar a otros jugadores. Es importante equilibrar las conexiones para evitar que ciertos territorios sean demasiado fáciles o difíciles de defender. Una buena regla es no sobrepasar un mínimo de 2 y un máximo de 6 conexiones por territorio.
 
-En el Risk clásico, las conexiones típicamente representan fronteras terrestres, pero también hay conexiones marítimas que permiten movimientos entre territorios separados por agua. Al crear un mapa personalizado, puedes decidir qué tipo de conexiones incluir y cómo afectan la estrategia del juego. Es habitual utilizar barreras naturales como montañas o cuerpos de agua para limitar el número de conexiones entre territorios.
+En el Risk clásico, las conexiones típicamente representan fronteras terrestres, pero también hay conexiones marítimas que permiten movimientos entre territorios separados por agua. Al crear un mapa personalizado, puedes decidir qué tipo de conexiones incluir y cómo afectan la estrategia del juego. 
 
-Para llevar a cabo esta tarea, es útil crear un esquema preliminar del mapa que represente los territorios como nodos y las conexiones como líneas entre ellos. Esto te permitirá visualizar la red de conexiones y hacer ajustes según sea necesario para lograr un equilibrio adecuado.
+Para llevar a cabo esta tarea, es útil crear un esquema preliminar del mapa que represente los territorios como nodos y las conexiones como líneas entre ellos. Esto te permitirá visualizar la red de conexiones y hacer ajustes según sea necesario para lograr un equilibrio adecuado. Si decides hacer el mapa en Domination, verás que este paso es obligatorio, ya que el programa te pedirá definir las conexiones entre territorios.
 
-En mi caso, al diseñar el mapa de las islas Pitiusas, me aproveché de dos características geográficas clave: la condición insular de Ibiza y Formentera, y la presencia de sierras de poca altitud que naturalmente dividen Ibiza en pequeños valles. Así, añadí conexiones marítimas, denotadas con líneas de puntos en el mapa, entre los principales puertos naturales de las islas. Para separar el interior insular, dibujé conjuntos de montañas entre territorios, evitando así territorios con más de seis conexiones.
+En mi caso, al diseñar el mapa de las islas Pitiusas, aproveché de dos características geográficas clave: 
+
+- **La condición insular de Ibiza y Formentera**. Al ser islas con puertos naturales, añadí conexiones marítimas entre ellos con la condición de que solo se puede navegar hasta el siguiente puerto adyacente. Gracias a las conexiones marítimas, pude conectar zonas lejanas en el mapa, evitando que los jugadores defiendan fácilmente continentes enteros sin riesgo de invasión.
+
+- **El interior accidentado de la isla mayor**. Ibiza queda dividida naturalmente en pequeños valles gracias a la existencia de sierras de poca altitud. Esto permite separar el gran interior insular y evitar territorios con más de seis conexiones.Para denotar la presencia de estas barreras naturales, dibujé conjuntos de montañas entre varios territorios, impidiendo el paso directo entre ellos.
+
+Otro truco útil es utilizar cuatrifinios o fronteras en *cruz*, como el famoso *Four states corner* en Estados Unidos. Así, por ejemplo, si tienes cuatro territorios que se tocan en un punto, puedes eliminar las conexiones diagonales entre ellos, reduciendo el número total de conexiones. No es un patrón común en las divisiones territoriales reales, pero puede ser una solución bastante práctica para equilibrar los territorios.
+
+{{< figure src="/posts/risk/connections.png" width="60%" align="center" alt="Conexiones" caption="Esquema preliminar de conexiones entre territorios." >}}
 
 
 ### 4. Diseño gráfico
