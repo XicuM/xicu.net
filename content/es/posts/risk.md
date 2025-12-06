@@ -1,6 +1,6 @@
 ---
 title: Cómo crear mapas de Risk
-date: 2025-10-26T00:00:00+02:00
+date: 2025-12-06T00:21:00+01:00
 comments: true
 showToc: true
 cover:
@@ -94,7 +94,7 @@ Una vez dibujado el mapa, es momento de definir las bonificaciones y reglas espe
 {{< gallery globalMatch="risk/1_*" sortOrder="desc" rowHeight="450" margins="8" thumbnailResizeOptions="600x600 q80 Lanczos" previewType="blur" thumbnailHoverEffect="enlarge" embedPreview=true lastRow="nojustify" loadJQuery=true >}}
 
 
-## 6. Jugar y ajustar
+### 6. Jugar y ajustar
 
 Después de crear el mapa, es fundamental probarlo jugando varias partidas. Esto te permitirá identificar cualquier desequilibrio en la distribución de territorios, conexiones o bonificaciones. Basándote en estas pruebas, puedes hacer ajustes para mejorar la jugabilidad y el equilibrio del mapa.
 
