@@ -173,24 +173,32 @@
                 </button>
                 {{- end }}
 
-                {{- $lang := .Lang}}
-                {{- $separator := or $label_text (not site.Params.disableThemeToggle)}}
-                {{- with site.Home.Translations }}
+                {{- $lang := .Lang }}
+                {{- $separator := or $label_text (not site.Params.disableThemeToggle) }}
+                {{- $currentTranslations := .Translations | default (slice) }}
+                {{- $homeTranslations := site.Home.Translations | default (slice) }}
+                {{- if gt (len $homeTranslations) 0 }}
                 <ul class="lang-switch">
                     {{- if $separator }}<li>|</li>{{ end }}
-                    {{- range . -}}
-                    {{- if ne $lang .Lang }}
+                    {{- range $homeTranslations -}}
+                    {{- $target := . }}
+                    {{- $langCode := .Lang }}
+                    {{- if ne $lang $langCode }}
+                    {{- /* Prefer page translation; fall back to home */ -}}
+                    {{- with (first 1 (where $currentTranslations "Lang" $langCode)) }}
+                        {{- $target = index . 0 }}
+                    {{- end }}
                     <li>
-                        <a href="{{- .Permalink -}}" title="{{ .Language.Params.languageAltTitle | default (.Language.LanguageName | emojify) | default (.Lang | title) }}"
-                            aria-label="{{ .Language.LanguageName | default (.Lang | title) }}">
-                            {{- if (and site.Params.displayFullLangName (.Language.LanguageName)) }}
-                            {{- .Language.LanguageName | emojify -}}
+                        <a href="{{- $target.Permalink -}}" title="{{ $target.Language.Params.languageAltTitle | default ($target.Language.LanguageName | emojify) | default ($target.Lang | title) }}"
+                            aria-label="{{ $target.Language.LanguageName | default ($target.Lang | title) }}">
+                            {{- if (and site.Params.displayFullLangName ($target.Language.LanguageName)) }}
+                            {{- $target.Language.LanguageName | emojify -}}
                             {{- else }}
-                            {{- .Lang | title -}}
+                            {{- $target.Lang | title -}}
                             {{- end -}}
                         </a>
                     </li>
-                    {{- end -}}
+                    {{- end }}
                     {{- end}}
                 </ul>
                 {{- end }}
