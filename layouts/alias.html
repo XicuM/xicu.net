@@ -1,11 +1,32 @@
 <!DOCTYPE html>
 <html lang="{{ site.Language }}">
 <head>
-    <title>Xicu Marí Website | Electronic Engineer</title>
-    <meta name="robots" content="index, follow">
     <meta charset="utf-8"/>
-    <meta name="description" content="{{- site.Params.description }}">
-    <link rel="canonical" href="{{ if site.Params.canonicalURL -}} {{ trim site.Params.canonicalURL " " }} {{- else -}} {{ .Permalink }} {{- end }}">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <title>{{ site.Title }} | Personal Website</title>
+    
+    <meta name="robots" content="index, follow">
+    <meta name="description" content="{{ site.Params.description }}">
+    <meta name="author" content="Xicu Marí">
+
+    <link rel="canonical" href="{{ site.BaseURL }}">
+    <link rel="alternate" hreflang="es" href="{{ site.BaseURL }}es/" />
+    <link rel="alternate" hreflang="en" href="{{ site.BaseURL }}en/" />
+    <link rel="alternate" hreflang="x-default" href="{{ site.BaseURL }}" />
+
+    <meta property="og:title" content="{{ site.Title }} | Personal Website" />
+    <meta property="og:description" content="{{ site.Params.description }}" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="{{ site.BaseURL }}" />
+    {{- if site.Params.images }}
+    <meta property="og:image" content="{{ site.BaseURL }}{{ index site.Params.images 0 }}" />
+    {{- end }}
+
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="{{ site.Title }}">
+    <meta name="twitter:description" content="{{ site.Params.description }}">
+
     {{- if site.Params.analytics.google.SiteVerificationTag }}
     <meta name="google-site-verification" content="{{ site.Params.analytics.google.SiteVerificationTag }}">
     {{- end }}
@@ -19,14 +40,23 @@
     <meta name="naver-site-verification" content="{{ site.Params.analytics.naver.SiteVerificationTag }}">
     {{- end }}
 
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Person",
+      "name": "Xicu Marí",
+      "url": "{{ site.BaseURL }}",
+      "description": "{{ site.Params.description }}"
+    }
+    </script>
+
     <noscript>
         <meta http-equiv="refresh" content="0; url={{ .Permalink }}"/>
     </noscript>
+    
     <script>
       ;(function () {
-        // Only do i18n at root, 
-        // otherwise, redirect immediately
-        if (window.location.pathname !== '/') {
+        if (window.location.pathname !== '/' && window.location.pathname !== '/index.html') {
           window.location.replace('{{ .Permalink }}')
           return
         }
@@ -46,7 +76,6 @@
             }
           }
 
-          // support for other well known properties in browsers
           for (i = 0; i < browserLanguagePropertyKeys.length; i++) {
             language = nav[browserLanguagePropertyKeys[i]]
             if (language && language.length) {
@@ -58,18 +87,16 @@
 
         var preferLang = getFirstBrowserLanguage()
         if (preferLang.indexOf('es') !== -1) {
-          // visitor prefers Spanish
           window.location.replace('/es/')
         } else {
-          // fallback to English
           window.location.replace('/en/')
         }
       })()
     </script>
 </head>
 <body>
-<h1>Xicu Marí</h1>
-<h2>Rerouting</h2>
-<p>You should be rerouted in a jiff, if not, <a href="{{ .Permalink }}">click here</a>.</p>
+    <h1>Xicu Marí</h1>
+    <p>Redirecting to your preferred language...</p>
+    <p><a href="{{ site.BaseURL }}en/">English</a> | <a href="{{ site.BaseURL }}es/">Español</a></p>
 </body>
 </html>
