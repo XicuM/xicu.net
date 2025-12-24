@@ -2,6 +2,7 @@
 title: Craft a CV with LaTeX
 date: 2025-12-24T10:29:05+01:00
 comments: true
+showToc: true
 draft: false
 tags: [LaTeX]
 cover:
@@ -10,9 +11,9 @@ cover:
 
 A lot of times when I find myself updating my CV, I end up spending more time struggling with formatting than actually doing the tiny update I wanted. From this frustration, I though that there should be a fastest way to manage this process.
 
-A great solution is to separate the content from the format, with a file containing your personal information and another file defining how to present it. This problem is nicely solved by $\LaTeX$, a tool widely used in academia for document preparation.
+A great solution is to separate the content from the format, with a file containing your personal information and another file defining how to present it. This problem is nicely solved by LaTex, a tool widely used in academia for document preparation.
 
-In this article, we'll combine $\LaTeX$ with **Pandoc** to provide a simple way to generate a professional CV from data. This way, the content of your CV is stored in a structured format (YAML), and the design is handled by a $\LaTeX$ template. Whenever you need to update your CV, you just modify the YAML file and regenerate the PDF.
+In this article, we'll combine LaTex with **Pandoc** to provide a simple way to generate a professional CV from data. This way, the content of your CV is stored in a structured format (YAML), and the design is handled by a LaTex template. Whenever you need to update your CV, you just modify the YAML file and regenerate the PDF.
 
 ## 1. Install the tools
 
