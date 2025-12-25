@@ -145,6 +145,6 @@ You can automatize the generation process using a build system like **Makefile**
 
 I have shared my full repository, including a more advanced template and automated scripts, on GitHub: 
 
-👉 [https://github.com/XicuM/cv](https://github.com/XicuM/cv).
+👉 [https://github.com/XicuM/cv](https://github.com/XicuM/cv)
 
 Happy crafting! If you run into any issues with Pandoc or LaTeX environments, feel free to drop a comment below.
